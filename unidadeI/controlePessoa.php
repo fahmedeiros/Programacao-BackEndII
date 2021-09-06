@@ -2,6 +2,7 @@
 require_once('classes/Pessoa.php');
 
 $pessoa = new Pessoa();
+    var_dump($pessoa);
 
 $pessoa->nome = "Rafael A. Florindo";
 $pessoa->email = "rafaelflorindo@hotmail.com";
