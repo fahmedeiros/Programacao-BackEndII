@@ -22,5 +22,5 @@
         function __destruct(){
             echo "Objeto finalizado!!!";
         }
-}
+    }
 ?>
