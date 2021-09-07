@@ -18,5 +18,9 @@
             echo "<br>Telefone: " . $this->telefone;
             echo "<br>Data Nasciomento: " . $this->dataNascimento;
         }
+
+        function __destruct(){
+            echo "Objeto finalizado!!!";
+        }
 }
 ?>
