@@ -5,10 +5,11 @@
         function __construct(){}
             
         public function adicionarMesa($qtdPernas, $tipo, $forma):bool{
-            if($this->setQuantidadePernas($qtdPernas) && $this->setTipo($tipo) && $this->setForma($forma))
+            if($this->setQuantidadePernas($qtdPernas) && $this->setTipo($tipo) && $this->setForma($forma)){
                 return true;
-            else
+            }else{
                 return false;
+            }
         }
 
         public function mostrarMesa():string{
