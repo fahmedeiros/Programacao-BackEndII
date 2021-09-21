@@ -7,5 +7,6 @@
 
     $pessoaJuridica = new Juridica("Farinha Nordestina", "12345678901234", "Rua 2", "rafaelflorindo@email.com", "2010-05-24");
 
-    print_r($pessoaJuridica);
+    $dados = $pessoaFisica->exibirDados();
+    echo $dados;
 ?>

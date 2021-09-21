@@ -1,7 +1,7 @@
 <?php
     require_once('Pessoa.php');
     
-    class Juridica extends Pessoa{
+    final class Juridica extends Pessoa{
         private $razaoSocial, $cnpj;
 
         function __construct($razaoSocial, $cnpj, $endereco, $email, $dataCadastro){
@@ -26,6 +26,11 @@
             }else{
                 return false;
             }
+        }
+
+        public function exibirDados(){
+            $dados = ["razaoSocial" => $this->razaoSocial, "cnpj" => $this->cnpj, "endereco" => $this->endereco, "email" => $this->email, "dataCadastro" => $this->dataCadastro];
+                return json_ecode($dados);
         }
     }
 ?>

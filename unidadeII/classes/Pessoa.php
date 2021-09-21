@@ -1,5 +1,5 @@
 <?php
-    class Pessoa{
+    abstract class Pessoa{
         protected $endereco, $email, $dataCadastro;
 
         function __construct($endereco, $email, $dataCadastro){
@@ -34,5 +34,7 @@
                 return false;
             }
         }
+
+        abstract public function exibirDados();
     }
 ?>
